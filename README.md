@@ -1,2 +1,2 @@
 # p5-appelsiner-i-turbanen
-Brush-up forløb af p5- og programmeringskompetencer ved starten af et nyt år med Digital Teknik
+Har ikke rigtig nogle planer for dette spill men er i gang med en andet spille, hvor der også gøres bruge af classes, dom objekter, arayes
