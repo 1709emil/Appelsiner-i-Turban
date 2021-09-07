@@ -23,8 +23,10 @@ let spilIgang = true;   //flag
 // parametrene til Kurv-konstruktøren er (x, y, bredde, dybde, speed)
 let turban = new Kurv(670, 100, 70, 50, 10);
 let img;
+let img2;
 function preload(){
     img = loadImage('billeder/turban.jpg')
+    img2 = loadImage('billeder/desert.jpg')
 }
 
     
@@ -40,7 +42,7 @@ function setup() {  // kører kun en gang, når programmet startes
 }
 
 function draw() {
-    background(0);
+    background(img2);
     
     if (spilIgang) {
         move();
@@ -68,7 +70,7 @@ function draw() {
 }
 
 function display() {
-    fill(255);
+    fill(0);
     textSize(12);
     text("Score: "+score, width-80, 30);
     text("Liv: " + liv, width-160, 30);
