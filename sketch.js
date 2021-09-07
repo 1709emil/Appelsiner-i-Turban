@@ -24,8 +24,9 @@ let spilIgang = true;   //flag
 let turban = new Kurv(670, 100, 70, 50, 10);
 let img;
 let img2;
+
 function preload(){
-    img = loadImage('billeder/turban.jpg')
+    img = loadImage('billeder/turbanV3.png')
     img2 = loadImage('billeder/desert.jpg')
 }
 
@@ -49,16 +50,16 @@ function draw() {
         checkScore();
         display();
         if (keyIsDown(UP_ARROW)) {
-            turban.moveY(-5);
+            turban.moveY(-8);
         }
         if (keyIsDown(DOWN_ARROW)) {
-            turban.moveY(5);
+            turban.moveY(8);
         }    
         if (keyIsDown(LEFT_ARROW)) {
-            turban.moveX(-5);
+            turban.moveX(-8);
         }
         if (keyIsDown(RIGHT_ARROW)) {
-            turban.moveX(5);
+            turban.moveX(8);
         } 
     }
     else {  // så er Game Over det der skal vises
@@ -108,7 +109,7 @@ function move() {
     if(x>=750){
         xspeed *=-1
     }
-    if (x > width || y > height) {
+    if ( y > height) {
         missed += 1;
         liv -= 1;
         if (liv < 1) {
